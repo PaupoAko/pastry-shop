@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nora's Pastry Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="products_body">
+    <!--start of navbar-->
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <nav>
+        <ul>
+            <li><a href="#">Nora's Pastry Shop</a></li>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="products.html">Products</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile"><a href="#">Contact Us</a></li>
+            <li class="menu" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+
+    <!--start of products-->
+    <section class="shop">
+        <div class="container">
+            <div class="box">
+                <img src="pandesal.jpg" alt="image of a pandesal">
+                <h4>Pandesal</h4>
+                <h5>PHP 5</h5>
+            </div>
+
+            <div class="box">
+                <img src="bibingka.jpg" alt="image of a bibingka">
+                <h4>Bibingka</h4>
+                <h5>PHP 20</h5>
+            </div>
+
+            <div class="box">
+                <img src="biginelli.jpg" alt="image of a biginelli">
+                <h4>Biginelli</h4>
+                <h5>PHP 150</h5>
+            </div>
+
+            <div class="box">
+                <img src="cinnabun.jpg" alt="image of a cinnabun">
+                <h4>Cinnabun</h4>
+                <h5>PHP 100</h5>
+            </div>
+
+            <div class="box">
+                <img src="cookie.jpg" alt="image of a cookie">
+                <h4>Cookie</h4>
+                <h5>PHP 50</h5>
+            </div>
+
+            <div class="box">
+                <img src="croisant.jpg" alt="image of a croisant">
+                <h4>Croisant</h4>
+                <h5>PHP 150</h5>
+            </div>
+
+            <div class="box">
+                <img src="loaf.jpg" alt="image of a loaf">
+                <h4>Loaf</h4>
+                <h5>PHP 80</h5>
+            </div>
+
+            <div class="box">
+                <img src="muffin.jpg" alt="image of a muffin">
+                <h4>Muffin</h4>
+                <h5>PHP 60</h5>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
